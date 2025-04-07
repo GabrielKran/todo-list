@@ -59,6 +59,7 @@ function addTask() {
     checkbox.addEventListener('change', function () {
         if (checkbox.checked) {
             textSpan.classList.add('completed');
+            li.classList.add('completedLi');
             
 
             tarefaConcluida.textContent = parseInt(tarefaConcluida.textContent) + 1;
@@ -66,6 +67,7 @@ function addTask() {
             
         } else {
             textSpan.classList.remove('completed');
+            li.classList.remove('completedLi');
 
             tarefaConcluida.textContent = parseInt(tarefaConcluida.textContent) - 1
             tarefaImcompleta.textContent = parseInt(tarefaImcompleta.textContent) + 1

@@ -1,4 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f0c2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.conteiner-todo {
+    background-color: rgb(44, 44, 44);
+    padding: 32px;
+    color: white;
+    border-radius: 12px;
+    border: 2px solid blue;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.form-todo input {
+    border-radius: 8px;
+    height: 30px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+}
+
+.form-todo button {
+    background-color: rgb(81, 109, 247);
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    transition: transform ease-in-out 0.1s;
+}
+
+.form-todo button:active {
+    transform: scale(0.90);
+}
+
+li {
+    list-style-type: none;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 25px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.delete-btn, .edit-btn {
+    color: rgb(216, 6, 6);
+    padding-right: 10px;
+}
+
+.delete-btn {
+    margin-left: auto;
+}
+
+hr {
+    border-color: blue;
+    margin-bottom: 12px;
+}
+
+.conteiner-contador {
+    text-align: center;
+}
+
 .completed {
     text-decoration: line-through;
     color: gray;
+}
+
+.completedLi {
+    border-color: rgb(193, 191, 191);
 }
